@@ -37,7 +37,7 @@ print(tsne_out$P[1:5,1:5])
 This R package offers an extra return value based on the Rtsne()
 function of the original package \[1\]. Note that the returned
 similarity matrix is accurate only when the parameter `theta` is set to
-be $0$.
+be $0$ (exact tSNE).
 
 # References
 
