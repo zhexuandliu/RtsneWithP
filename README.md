@@ -7,7 +7,11 @@
 
 This package is modified from R package `Rtsne` (version 0.17) \[1\]. We
 added an extra output to assess the similarity matrix in the input
-space, i.e. $p_{ij}$’s \[2\].
+space, i.e. 
+$$
+p_{ij}
+$$
+’s \[2\].
 
 To install the package from the github repository, use:
 
