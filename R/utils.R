@@ -11,7 +11,7 @@
 #' Rescaling the input values mitigates these problems to some extent.
 #'
 #' @return A numeric matrix of the same dimensions as \code{X} but centred by column and scaled to have a maximum deviation of 1.
-#' 
+#'
 #' @author
 #' Aaron Lun
 #'
@@ -40,7 +40,7 @@ is.wholenumber <- function(x, tol = .Machine$double.eps^0.5)
 # the format of the input data (e.g., distance matrix or neighbors).
 {
     if (!is.wholenumber(dims) || dims < 1 || dims > 3) { stop("dims should be either 1, 2 or 3") }
-    if (!is.wholenumber(max_iter) || !(max_iter>=0)) { stop("number of iterations should be a positive integer")}
+    if (!is.wholenumber(max_iter) || !(max_iter>=0)) { stop("number of iterations should be a non-negative integer")}
     if (!is.null(Y_init) && (nsamples!=nrow(Y_init) || ncol(Y_init)!=dims)) { stop("incorrect format for Y_init") }
 
     if (!is.numeric(perplexity) || perplexity <= 0) { stop("perplexity should be a positive number") }

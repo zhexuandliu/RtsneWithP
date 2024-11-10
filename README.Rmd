@@ -22,8 +22,8 @@ This package is modified from R package `Rtsne` (version 0.17) [1]. We added an 
 To install the package from the github repository, use:
 
 ```{r}
-if(!require(devtools)) install.packages("devtools") # If not already installed
-devtools::install_github("zhexuandliu/RtsneWithP")
+# if(!require(devtools)) install.packages("devtools") # If not already installed
+# devtools::install_github("zhexuandliu/RtsneWithP")
 ```
 
 ## Usage
